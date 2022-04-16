@@ -1,0 +1,14 @@
+parameters:
+	level: max
+	paths:
+		- src
+		- tests
+	ignoreErrors:
+		- '/^Call to an undefined method Ancarda\\Gemini\\Gemtext\\Node\\Node::(getText|getLink|getLabel)/'
+		- '/^Parameter #1 \$pre of method Ancarda\\Gemini\\Gemtext\\Encoder\\HTML::preformatted\(\) expects Ancarda\\Gemini\\Gemtext\\Node\\Preformatted, Ancarda\\Gemini\\Gemtext\\Node\\Node given/'
+
+includes:
+	- vendor/phpstan/phpstan-phpunit/extension.neon
+	- vendor/phpstan/phpstan-phpunit/rules.neon
+	- vendor/phpstan/phpstan-strict-rules/rules.neon
+	- vendor/phpstan/phpstan/conf/bleedingEdge.neon
