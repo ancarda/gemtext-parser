@@ -1,0 +1,29 @@
+---
+image: debian/bookworm
+
+secrets:
+ - cde47d09-64da-4651-a62e-bf762c4dec73
+
+sources:
+  - https://git.sr.ht/~ancarda/gemtext-parser
+
+packages:
+ - php8.1-cli
+ - php8.1-xml
+ - composer
+ - php-xdebug
+ - unzip
+
+environment:
+  DIR: gemtext-parser
+  XDEBUG_MODE: coverage
+
+tasks:
+  - info:        php --version
+  - composer:    cd $DIR && composer install
+  - analyze:     cd $DIR && composer run-script analyze
+  - check-style: cd $DIR && composer run-script check-style
+  - test:        cd $DIR && composer run-script test
+  - check-cov:   cd $DIR && composer run-script check-coverage
+  - check-tests: cd $DIR && composer run-script check-tests
+  - packagist:   cd $DIR && .builds/poke-packagist ancarda $DIR ~/.packagist-api-token

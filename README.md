@@ -2,6 +2,11 @@
 
 _Gemtext (text/gemini) parser and HTML encoder_
 
+[![License](https://img.shields.io/badge/license-MIT-teal)](https://choosealicense.com/licenses/mit/)
+[![Latest Stable Version](https://poser.pugx.org/ancarda/gemtext-parser/v/stable)](https://packagist.org/packages/ancarda/gemtext-parser)
+[![Total Downloads](https://poser.pugx.org/ancarda/gemtext-parser/downloads)](https://packagist.org/packages/ancarda/gemtext-parser)
+[![builds.sr.ht status](https://builds.sr.ht/~ancarda/gemtext-parser.svg)](https://builds.sr.ht/~ancarda/gemtext-parser?)
+
 This package implements a PHP parser for Gemtext (`text/gemini`) as specified
 here: https://gemini.circumlunar.space/docs/gemtext.gmi
 
