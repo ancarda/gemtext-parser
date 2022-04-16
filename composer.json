@@ -1,5 +1,5 @@
 {
-    "name": "ancarda/gemtext",
+    "name": "ancarda/gemtext-parser",
     "description": "Gemtext (text/gemini) parser with conversion to HTML",
     "type": "library",
     "license": "MIT",
